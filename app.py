@@ -33,7 +33,7 @@ def generate_vision_result(encoded_image):
                 }
             ] } 
         ], 
-        "max_tokens": 5000 
+        "max_tokens": 3000 
     }   
 
     # Make the API call   
@@ -59,4 +59,3 @@ if __name__ == "__main__":
             data = result.json()
             content_value = data['choices'][0]['message']['content']
             st.write(content_value)
-
